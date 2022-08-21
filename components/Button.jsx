@@ -1,11 +1,11 @@
 import React from "react";
 import cn from "classnames";
 
-function Button({ buttonText = 'Button', appearance, icon, buttonClass, ...props }) {
+function ButtonComponent({ buttonText = 'Button', appearance, icon, buttonClass, ...props }) {
   return (
     <button
       {...props}
-      className={cn("px-4 py-2 rounded-md", {
+      className={cn("px-5 py-2 rounded-md", {
 
         'flex items-center justify-center gap-2': icon,
 
@@ -24,11 +24,10 @@ function Button({ buttonText = 'Button', appearance, icon, buttonClass, ...props
         [buttonClass]: !!buttonClass,
       })}
     >
-      {/* <HiOutlineSpeakerphone /> */}
       {icon}
       {buttonText}
     </button>
   );
 }
 
-export default Button;
+export default ButtonComponent;
