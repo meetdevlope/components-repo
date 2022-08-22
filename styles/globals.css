@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 /* HAMBURGER ANIMATION */
 
@@ -64,6 +71,5 @@
 .ham8.active .bottom {
   stroke-dashoffset: -64px;
 }
-
 
 /* HAMBURGER ANIMATION */
