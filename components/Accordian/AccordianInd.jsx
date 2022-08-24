@@ -12,7 +12,7 @@ const AccordianInd = ({ que }) => {
     <div className="max-w-2xl mx-auto">
       <div className="m-2 cursor-pointer py-2" onClick={() => toggle()}>
         <div className="flex justify-between items-center mx-auto">
-          <h3>{que.question}</h3>
+          <h5>{que.question}</h5>
           <IoIosArrowDropdownCircle
             fontSize={"1.5rem"}
             className={`${
@@ -26,9 +26,9 @@ const AccordianInd = ({ que }) => {
             height: `${active ? ref?.current?.scrollHeight + "px" : "0px"}`,
           }}
         >
-          <p ref={ref} className="pt-4 opacity-50">
+          <h6 ref={ref} className="pt-4 opacity-50">
             {que.answer}
-          </p>
+          </h6>
         </div>
       </div>
       <div className="bg-black h-px"></div>

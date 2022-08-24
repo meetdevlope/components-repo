@@ -1,13 +1,18 @@
 import React from "react";
 import cn from "classnames";
 
-function ButtonComponent({ buttonText = 'Button', appearance, icon, buttonClass, ...props }) {
+function ButtonComponent({
+  buttonText = "Button",
+  appearance = "pri",
+  icon,
+  buttonClass,
+  ...props
+}) {
   return (
     <button
       {...props}
       className={cn("px-5 py-2 rounded-md", {
-
-        'flex items-center justify-center gap-2': icon,
+        "flex items-center justify-center gap-2": icon,
 
         "bg-pri hover:bg-pri-light text-white transition-all":
           appearance === "pri",

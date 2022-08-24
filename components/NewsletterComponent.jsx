@@ -1,18 +1,18 @@
 import React from "react";
 import ButtonComponent from "./Button";
 
-const NewsletterComponent = ({ variant }) => {
+const NewsletterComponent = ({ variant = "1" }) => {
   if (variant === "1") {
     return (
       <div className="flex flex-col w-full justify-between items-center gap-4 tab:flex-row text-center tab:text-left">
         <div>
           <h3 className="mb-4">SUBSCRIBE TO OUR NEWSLETTER.</h3>
-          <p>
+          <h6>
             Get the latest news, articles, and resources in your inbox weekly.
-          </p>
+          </h6>
         </div>
 
-        <div className="flex items-center tab:justify-end tab:w-full">
+        <div className="flex items-center justify-center gap-4 flex-wrap tab:justify-end tab:w-full">
           <input
             type="email"
             placeholder="Email address"
@@ -27,9 +27,9 @@ const NewsletterComponent = ({ variant }) => {
       <div className="flex flex-col items-start">
         <div>
           <h3 className="mb-4">SUBSCRIBE TO OUR NEWSLETTER.</h3>
-          <p>
+          <h6>
             Get the latest news, articles, and resources in your inbox weekly.
-          </p>
+          </h6>
         </div>
 
         <div className="mt-4 flex justify-center gap-4 flex-wrap">

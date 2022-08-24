@@ -28,7 +28,7 @@ const Forms = () => {
           onSubmit={submitAction}
           fields={[
             {
-              placeholder: "First Name",
+              label: "First Name",
               type: "text",
               name: "firstName",
               component: FormInput,

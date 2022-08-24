@@ -23,7 +23,11 @@ module.exports = {
     screens: {
       tab: '900px',
     },
-    extend: {},
+    extend: {
+      aspectRatio: {
+        'h-image': '3/4'
+      }
+    },
   },
   plugins: [],
 }

@@ -17,7 +17,41 @@
     -webkit-appearance: none;
     margin: 0;
   }
+@layer components {
+
+  h1 {
+    @apply text-6xl tracking-tight font-bold
+  }
+
+  h2 {
+    @apply text-[32px] tracking-tight font-semibold
+  }
+
+  h3 {
+    @apply text-[28px] tracking-tight font-semibold
+  }
+
+  h4 {
+    @apply text-2xl
+  }
+
+  h5 {
+    @apply text-xl
+  }
+
+  h6 {
+    @apply text-base
+  }
+
+  p {
+    @apply text-xs
+  }
+
+  .vt {
+    @apply border-b border-sec-dark text-pri-light my-10 font-bold text-lg
+  }
 }
+  }
 /* HAMBURGER ANIMATION */
 
 .ham {
