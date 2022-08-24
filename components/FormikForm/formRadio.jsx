@@ -1,4 +1,5 @@
 import React from "react";
+import cn from "classnames";
 
 const FormRadio = ({
   label,
@@ -6,12 +7,19 @@ const FormRadio = ({
   field,
   form: { setFieldValue },
   icon,
+  wrapperClass,
+  labelClass,
+  inputClass,
   options,
   ...props
 }) => {
   return (
-    <div className="flex flex-col">
-      <label>{label}</label>
+    <div
+      className={cn("flex flex-col", {
+        [wrapperClass]: !!wrapperClass,
+      })}
+    >
+      <label className={cn({ [labelClass]: !!labelClass })}>{label}</label>
       <div className="flex gap-8 items-center">
         {icon}
         {options.map((option, id) => (
@@ -25,7 +33,13 @@ const FormRadio = ({
               }}
               id={id}
             />
-            <span className="ml-2">{option.text}</span>
+            <span
+              className={cn("ml-2", {
+                [inputClass]: !!inputClass,
+              })}
+            >
+              {option.text}
+            </span>
           </div>
         ))}
       </div>

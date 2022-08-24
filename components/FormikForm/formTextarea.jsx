@@ -1,9 +1,25 @@
 import React from "react";
+import cn from "classnames";
 
-const FormTextarea = ({ label, id, field, icon, ...props }) => {
+const FormTextarea = ({
+  label,
+  id,
+  field,
+  icon,
+  wrapperClass,
+  labelClass,
+  inputClass,
+  ...props
+}) => {
   return (
-    <div className={"flex flex-col"}>
-      {{ label } && <label>{label}</label>}
+    <div
+      className={cn("flex flex-col", {
+        [wrapperClass]: !!wrapperClass,
+      })}
+    >
+      {{ label } && (
+        <label className={cn({ [labelClass]: !!labelClass })}>{label}</label>
+      )}
       <div>
         {icon}
         <textarea
@@ -11,7 +27,12 @@ const FormTextarea = ({ label, id, field, icon, ...props }) => {
           rows="5"
           {...props}
           {...field}
-          className="border bg-[transparent] mt-2 w-full p-1 focus:outline-none placeholder:text-white"
+          className={cn(
+            "border bg-[transparent] mt-2 w-full p-1 focus:outline-none placeholder:text-white",
+            {
+              [inputClass]: !!inputClass,
+            }
+          )}
         ></textarea>
       </div>
     </div>

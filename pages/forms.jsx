@@ -6,7 +6,6 @@ import FormRadio from "../components/FormikForm/formRadio";
 import FormDropdown from "../components/FormikForm/formDropdown";
 import FormTextarea from "../components/FormikForm/formTextarea";
 import SearchBar from "../components/Searchbar";
-import { MdOutlineSearch } from "react-icons/md";
 
 const Forms = () => {
   const submitAction = (values) => {
@@ -29,7 +28,7 @@ const Forms = () => {
           onSubmit={submitAction}
           fields={[
             {
-              label: "First Name",
+              placeholder: "First Name",
               type: "text",
               name: "firstName",
               component: FormInput,
