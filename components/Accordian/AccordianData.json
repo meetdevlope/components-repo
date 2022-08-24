@@ -1,0 +1,32 @@
+[
+    {
+      "question": "What are the services do you offer",
+      "answer":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis vitae tempora quod provident tenetur culpa dolore facere? Earum, dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis vitae tempora quod provident tenetur culpa dolore facere? Earum, dolor?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis vitae tempora quod provident tenetur culpa dolore facere? Earum, dolor?",
+      "open": false
+    },
+    {
+      "question": "what are our preferred method of payment",
+      "answer":
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit namLorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam",
+      "open": false
+    },
+    {
+      "question": "Are your services beginners friendly",
+      "answer":
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores,",
+      "open": false
+    },
+    {
+      "question": "what how does it take to upgrade a package",
+      "answer":
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi.",
+      "open": false
+    },
+    {
+      "question": "Where are your offices located around the world",
+      "answer":
+        "Lorem ipsum sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi.",
+      "open": false
+    }
+  ]
