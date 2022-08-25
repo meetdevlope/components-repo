@@ -65,7 +65,7 @@ const Header = () => {
       </div>
 
       <svg
-        className={`ham hamRotate ham8 tab:hidden z-50 ${
+        className={`ham hamRotate ham8 tab:hidden z-50 mr-3 ${
           hamOpen ? "active" : null
         }`}
         onClick={OpenHamburger}
@@ -83,7 +83,7 @@ const Header = () => {
         />
       </svg>
       <div
-        className={`fixed top-0 left-0 h-screen w-screen bg-black opacity-80 transition-all duration-300 ${
+        className={`fixed top-0 left-0 h-screen w-screen bg-black opacity-80 transition-all duration-300 tab:hidden ${
           hamOpen ? "block" : "hidden"
         }`}
       ></div>
