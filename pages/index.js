@@ -14,6 +14,7 @@ const Index = () => {
         <ButtonComponent appearance={'pri'} buttonText='Accordian' onClick={() => router.push('/accordian')} />
         <ButtonComponent appearance={'pri'} buttonText='Newsletter' onClick={() => router.push('/newsletter')} />
         <ButtonComponent appearance={'pri'} buttonText='Forms' onClick={() => router.push('/forms')} />
+        <ButtonComponent appearance={'pri'} buttonText='Slider' onClick={() => router.push('/slider')} />
         <ButtonComponent appearance={'pri'} buttonText='Footer' onClick={() => router.push('/footer')} />
       </div>
     </div>
