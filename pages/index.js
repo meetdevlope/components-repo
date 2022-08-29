@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import ButtonComponent from '../components/Button'
+import TypeComponent from '../components/TypeComponent';
 
 const Index = () => {
 
@@ -17,6 +18,7 @@ const Index = () => {
         <ButtonComponent appearance={'pri'} buttonText='Forms' onClick={() => router.push('/forms')} />
         <ButtonComponent appearance={'pri'} buttonText='Slider' onClick={() => router.push('/slider')} />
         <ButtonComponent appearance={'pri'} buttonText='Footer' onClick={() => router.push('/footer')} />
+        <ButtonComponent appearance={'pri'} buttonText='Type' onClick={() => router.push('/type')} />
       </div>
     </div>
   )
