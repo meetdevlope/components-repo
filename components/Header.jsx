@@ -65,23 +65,51 @@ const Header = () => {
       </div>
 
       <svg
-        className={`ham hamRotate ham8 tab:hidden z-50 mr-3 ${
-          hamOpen ? "active" : null
+        className={`ham ham8 tab:hidden z-50 mr-3 fill-[none] stroke-black ${
+          hamOpen ? "rotate-45" : null
         }`}
         onClick={OpenHamburger}
         viewBox="0 0 100 100"
         width="60"
+        style={{ strokeWidth: "5.5", strokeLinecap: "round" }}
       >
         <path
-          className="line top"
+          className="line top transition-all duration-300"
           d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+          style={
+            hamOpen
+              ? { strokeDashoffset: "-64", strokeDasharray: "40 160" }
+              : { strokeDasharray: "40 160" }
+          }
         />
-        <path className="line middle" d="m 30,50 h 40" />
         <path
-          className="line bottom"
+          className="line middle transition-all duration-300"
+          d="m 30,50 h 40"
+          style={
+            hamOpen
+              ? {
+                  rotate: "90deg",
+                  strokeDasharray: "40 142",
+                  transformOrigin: "50%",
+                }
+              : { strokeDasharray: "40 142", transformOrigin: "50%" }
+          }
+        />
+        <path
+          className="line bottom transition-all duration-300"
           d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+          style={
+            hamOpen
+              ? {
+                  strokeDashoffset: "-64",
+                  strokeDasharray: "40 85",
+                  transformOrigin: "50%",
+                }
+              : { strokeDasharray: "40 85", transformOrigin: "50%" }
+          }
         />
       </svg>
+
       <div
         className={`fixed top-0 left-0 h-screen w-screen bg-black opacity-80 transition-all duration-300 tab:hidden ${
           hamOpen ? "block" : "hidden"
